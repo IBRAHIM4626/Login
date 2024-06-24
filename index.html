@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./Css/style.css" />
+    <link rel="stylesheet" href="./Css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="container">
+          <div class="brand">
+            <a href="./index.html">Techno</a>
+          </div>
+
+          <ul class="links">
+            <li id="home"><a class="nav_link" href="./index.html">Home</a></li>
+            <li id="product">
+              <a class="nav_link" href="./products.html">Products</a>
+            </li>
+            <li id="about">
+              <a class="nav_link" href="./about.html">About</a>
+            </li>
+            <li id="contact">
+              <a class="nav_link" href="./contact.html">Contact</a>
+            </li>
+            <li class="cart-icon">
+              <i id="openCart" class="bx bx-cart"></i>
+              <span id="cartCounter">0</span>
+            </li>
+          </ul>
+
+          <div class="container-user">
+            <ul id="user_info">
+              <li><p id="user"></p></li>
+              <li><button href="#" id="logout">Logout</button></li>
+            </ul>
+          </div>
+
+          <br class="clearfix" />
+        </div>
+      </div>
+    </header>
+
+    <section class="section-slider">
+      <div class="btn1control">
+        <button><</button>
+      </div>
+      <div class="imgContainer"><img src="./images/1.jpg" alt="" /></div>
+
+      <div class="btn2control">
+        <button>></button>
+      </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+      <h2>Featured Products</h2>
+      <p>Collection new Modern Technology</p>
+      <div class="pro-container">
+        <div class="pro">
+          <img src="./images/18.jpg" alt="" />
+          <div class="des">
+            <span>Apple</span>
+            <h5>Iphone 15 Pro</h5>
+            <h4>$500</h4>
+          </div>
+          <button>
+            <a class="add-to-cart" href="#"
+              ><i id="icon" class="bx bx-cart cart" onclick="addtocart()"></i
+            ></a>
+          </button>
+        </div>
+        <div class="pro">
+          <img src="./images/10.jpg" alt="" />
+          <div class="des">
+            <span>Apple</span>
+            <h5>Macbook Pro</h5>
+            <h4>$700</h4>
+          </div>
+          <a class="add-to-cart" href="#"
+            ><i id="icon" class="bx bx-cart cart"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="./images/35.jpg" alt="" />
+          <div class="des">
+            <span>Apple</span>
+            <h5>Mouse</h5>
+            <h4>$20</h4>
+          </div>
+          <a class="add-to-cart" href="#"
+            ><i id="icon" class="bx bx-cart cart"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="./images/32.jpg" alt="" />
+          <div class="des">
+            <span>Apple</span>
+            <h5>Keyboard 15 Pro</h5>
+            <h4>$50</h4>
+          </div>
+          <a class="add-to-cart" href="#"
+            ><i id="icon" class="bx bx-cart cart"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <button id="backToTopBtn" title="Back to Top">Top</button>
+
+    <section id="banner" class="section-m1">
+      <h2>all products</h2>
+      <a href="./products.html"><button class="normal">Explore More</button></a>
+    </section>
+
+    <div class="dispCart">
+      <div class="sidebarCart">
+        <div class="head"><p>My Cart</p></div>
+        <div id="cartItm">Your cart is empty</div>
+      </div>
+    </div>
+
+    <footer class="section-p1">
+      <div class="col">
+        <ul class="fmenuTitle">
+          <li class="fListItem">Company</li>
+        </ul>
+        <p><strong>Address:</strong> 254 Bellingham, Street 35, London</p>
+        <p><strong>Phone:</strong> +20 120 801 5634</p>
+      </div>
+      <div class="copyright">
+        <p>2024, Techno Ecommerce</p>
+      </div>
+    </footer>
+
+    <script src="./Js/cart.js"></script>
+    <script src="./Js/script.js"></script>
+  </body>
+</html>

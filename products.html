@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Css/index.css" />
+
+    <link rel="stylesheet" href="./Css/style.css" />
+    <link rel="stylesheet" href="./Css/products.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="container">
+          <div class="brand">
+            <a href="./index.html">Techno</a>
+          </div>
+
+          <ul class="links">
+            <li id="home"><a class="nav_link" href="./index.html">Home</a></li>
+            <li id="product">
+              <a class="nav_link" href="./products.html">Products</a>
+            </li>
+            <li id="about">
+              <a class="nav_link" href="./about.html">About</a>
+            </li>
+            <li id="contact">
+              <a class="nav_link" href="./contact.html">Contact</a>
+            </li>
+            <li class="cart-icon">
+              <i id="openCart" class="bx bx-cart"></i>
+              <span id="cartCounter">0</span>
+            </li>
+          </ul>
+
+          <div class="container-user">
+            <ul id="user_info">
+              <li><p id="user"></p></li>
+              <li><button href="#" id="logout">Logout</button></li>
+            </ul>
+          </div>
+
+          <br class="clearfix" />
+        </div>
+      </div>
+    </header>
+
+    <div class="contain">
+      <div class="sidebar">
+        <div class="filt">
+          <h3 id="cat">Categories</h3>
+          <div class="category">
+            <div id="btns">
+              <button class="category-btn" data-category="phones">
+                Phones
+              </button>
+              <button class="category-btn" data-category="laptops">
+                Laptop
+              </button>
+              <button class="category-btn" data-category="keyboards">
+                Keyboard
+              </button>
+              <button class="category-btn" data-category="mouses">Mouse</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contant">
+      <div class="header">
+        <p>Products Category filter</p>
+      </div>
+      <div id="root" class="hidden"></div>
+    </div>
+
+    <div class="dispCart">
+      <div class="sidebarCart">
+        <div class="head"><p>My Cart</p></div>
+        <div id="cartItm">Your cart is empty</div>
+      </div>
+    </div>
+
+    <script src="./Js/cart.js"></script>
+    <script src="./Js/products.js"></script>
+  </body>
+</html>

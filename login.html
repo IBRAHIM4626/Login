@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Css/index.css" />
+    <link rel="stylesheet" href="./Css/style.css" />
+    <link rel="stylesheet" href="./Css/login.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-conetent">
+          <a href="./index.html" class="brand">Techno</a>
+          <nav>
+            <ul>
+              <li><a href="./login.html">sign in</a></li>
+              <li><a href="./register.html">sign up</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="section-form">
+      <h2>Login user</h2>
+      <form id="myform">
+        <input type="email" name="email" id="emailLogin" placeholder="Email" />
+        <p class="requiredEmail hide">This Field is required</p>
+        <p class="validEmail hide">Email should contain @</p>
+        <input
+          type="password"
+          name="passwordInput"
+          id="passwordLogin"
+          placeholder="Password"
+        />
+        <p class="requiredPassword hide">This Field is required</p>
+        <p class="validPassword hide">
+          Password should be >= 8 characters,Capital letters special characters
+          and numbers
+        </p>
+
+        <button id="sign_in" type="submit">login</button>
+      </form>
+    </section>
+
+    <script src="./Js/login.js"></script>
+  </body>
+</html>
